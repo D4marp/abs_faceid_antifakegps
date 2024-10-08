@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "233056755337",
-    "project_id": "fic16absensi",
-    "storage_bucket": "fic16absensi.appspot.com"
+    "project_number": "769755457924",
+    "project_id": "vivattendance",
+    "storage_bucket": "vivattendance.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:233056755337:android:bc04b4741f80f46e333058",
+        "mobilesdk_app_id": "1:769755457924:android:90f5f4830c9d0d772cd5d1",
         "android_client_info": {
           "package_name": "com.example.flutter_absensi_app"
         }
@@ -15,7 +15,26 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyC7BclJuilpFwxhoRU6V6adVlWWJy_taJI"
+          "current_key": "AIzaSyAEe9pviD9_JlT6BWnfIFdQsN1BZCwGXPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769755457924:android:1ed99826a7dab9f92cd5d1",
+        "android_client_info": {
+          "package_name": "vivattendance.appspot.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEe9pviD9_JlT6BWnfIFdQsN1BZCwGXPw"
         }
       ],
       "services": {

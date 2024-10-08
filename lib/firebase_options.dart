@@ -17,19 +17,13 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -53,10 +47,30 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC7BclJuilpFwxhoRU6V6adVlWWJy_taJI',
-    appId: '1:233056755337:android:bc04b4741f80f46e333058',
-    messagingSenderId: '233056755337',
-    projectId: 'fic16absensi',
-    storageBucket: 'fic16absensi.appspot.com',
+    apiKey: 'AIzaSyAEe9pviD9_JlT6BWnfIFdQsN1BZCwGXPw',
+    appId: '1:769755457924:android:90f5f4830c9d0d772cd5d1',
+    messagingSenderId: '769755457924',
+    projectId: 'vivattendance',
+    storageBucket: 'vivattendance.appspot.com',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyD01QGa5EIafzguSGDp4ia0gCXfMAS3xZM',
+    appId: '1:769755457924:web:5241bdfe9737a9562cd5d1',
+    messagingSenderId: '769755457924',
+    projectId: 'vivattendance',
+    authDomain: 'vivattendance.firebaseapp.com',
+    storageBucket: 'vivattendance.appspot.com',
+    measurementId: 'G-XPN69R3FHT',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyA381-l6Ddh9_w5E9M6ezVe2lrjJM0vWac',
+    appId: '1:769755457924:ios:9edbea22ece73dbf2cd5d1',
+    messagingSenderId: '769755457924',
+    projectId: 'vivattendance',
+    storageBucket: 'vivattendance.appspot.com',
+    iosBundleId: 'com.example.flutterAbsensiApp',
+  );
+
 }
